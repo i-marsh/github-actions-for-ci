@@ -8,6 +8,7 @@ export default class Game {
   }
 
   turn (row, col) {
+    // todo: implement Tie Situation
     col = col || row
     this.board[row][col] = this.sym
   }
