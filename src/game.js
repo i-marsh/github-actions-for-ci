@@ -8,7 +8,6 @@ export default class Game {
   }
 
   turn (row, col) {
-    
     // todo: implement Tie Situation
     col = col || row
     this.board[row][col] = this.sym
@@ -50,5 +49,4 @@ export default class Game {
     return ((b[0][0] !== null && b[0][0] === b[1][1] && b[0][0] === b[2][2]) ||
             (b[0][2] !== null && b[0][2] === b[1][1] && b[0][2] === b[2][0]))
   }
-
 }
